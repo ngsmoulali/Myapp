@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rishi.myapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/myapp_ic"
+        android:label="My App"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Benchmark" />
+        <activity android:name=".ToastActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".GreetUserActivity" />
+        <activity
+            android:name=".ContextMenuActivity"
+            android:label="ContextMenu" />
+        <activity android:name=".ChangeBackgroundActivity" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="Menu" />
+        <activity
+            android:name=".ActivityNavigator"
+            android:label="Navigation " />
+        <activity android:name=".GoogleNewsActivity" />
+        <activity
+            android:name=".LifeCycleActivity"
+            android:label="Activity Life Cycle" />
+        <activity android:name=".ImageAnimationsActivity" />
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".ImageViewerActivity" />
+        <activity android:name=".SimpleCalculatorActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SendTextActivity" />
+        <activity android:name=".BackgroundChangeActivity"></activity>
+    </application>
+
+</manifest>
