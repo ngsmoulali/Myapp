@@ -12,6 +12,8 @@ public class WebViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_web_view);
         WebView website=(WebView)findViewById(R.id.wvFelight);
         website.getSettings().setJavaScriptEnabled(true);
-        website.loadUrl("https://developer.android.com/guide/webapps/webview.html");
+
+        website.loadUrl("file:///android_asset/html.html");
+
     }
 }

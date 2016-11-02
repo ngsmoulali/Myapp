@@ -18,15 +18,24 @@ public class SendTextActivity extends AppCompatActivity {
         Log.i("Send SMS", "");
         String phoneNumber = etNumber.getText().toString();
         String textMessage = etText.getText().toString();
+        int num=Integer.parseInt(phoneNumber.toString());
+        if(num==10) {
+             try {
+                 Log.d("test","myTest1");
 
-        try {
-            SmsManager smsManager = SmsManager.getDefault();
-            smsManager.sendTextMessage(phoneNumber, null, textMessage, null, null);
-            Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show();
-        }
+                    SmsManager smsManager = SmsManager.getDefault();
+                    smsManager.sendTextMessage(phoneNumber, null, textMessage, null, null);
+                    Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show();
 
-        catch (Exception e) {
-            Toast.makeText(getBaseContext(), "SMS faild, please try again.", Toast.LENGTH_SHORT).show();
+                 }
+
+             catch (Exception e) {
+                   Toast.makeText(getBaseContext(), "SMS faild, please try again.", Toast.LENGTH_SHORT).show();
+             }
+
+       }
+        else{
+            Toast.makeText(getBaseContext(),"Phone number should be 10 digits",Toast.LENGTH_SHORT).show();
         }
     }
 

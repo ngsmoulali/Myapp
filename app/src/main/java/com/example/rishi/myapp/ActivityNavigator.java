@@ -17,14 +17,19 @@ import android.view.View;
                 Intent bench = new Intent(getApplicationContext(), Benchmark.class);
                 startActivity(bench);
                 break;
-            case R.id.btnContext:
-                Intent context = new Intent(getApplicationContext(), ContextMenuActivity.class);
+            case R.id.btnCalculator:
+                Intent context = new Intent(getApplicationContext(), SimpleCalculatorActivity.class);
                 startActivity(context);
                 break;
             case R.id.btnWeb:
                 Intent web = new Intent(getApplicationContext(), WebViewActivity.class);
                 startActivity(web);
                 break;
+            case R.id.btnToast:
+                Intent toast = new Intent(getApplicationContext(), ToastActivity.class);
+                startActivity(toast);
+                break;
+
             case R.id.btnGoogle:
                 Intent google = new Intent(getApplication(), GoogleNewsActivity.class);
                 google.putExtra("news","Google News");
@@ -34,6 +39,10 @@ import android.view.View;
                 Intent felight = new Intent(getApplication(), GoogleNewsActivity.class);
                 felight.putExtra("news","Felight News");
                 startActivity(felight);
+                break;
+            case R.id.btnSendtext:
+                Intent text = new Intent(getApplication(), SendTextActivity.class);
+                startActivity(text);
                 break;
         }
 

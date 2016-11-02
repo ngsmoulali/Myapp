@@ -22,7 +22,7 @@ public class GreetUserActivity extends AppCompatActivity {
                tvGreet.setText("Please enter details");
            }
            else {
-               tvGreet.setText("Hello" + fName + "   " + lName + " this app is to greet you");
+               tvGreet.setText("Namasthe" + fName + "   " + lName );
            }
 
    }

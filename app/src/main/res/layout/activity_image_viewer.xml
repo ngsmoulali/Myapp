@@ -15,5 +15,8 @@
         android:id="@+id/ivView"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:src="@drawable/image_pic"/>
+
+
 </RelativeLayout>
